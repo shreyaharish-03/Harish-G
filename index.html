@@ -1,5 +1,6 @@
 
-      <!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -11,88 +12,112 @@
       font-family: 'Playfair Display', serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #1a1a40, #3d2c8d);
-      color: #f9f6f2;
+      background: #fff0f5;
+      color: #3d2c8d;
     }
 
     header {
-      background-color: #2e265f;
-      color: #ffd700;
-      padding: 2rem;
+      background: linear-gradient(to right, #fbdde7, #e3d2fb);
       text-align: center;
-      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+      padding: 4rem 1rem;
     }
 
     header h1 {
       margin: 0;
-      font-size: 3rem;
-      letter-spacing: 2px;
+      font-size: 3.5rem;
+      color: #702963;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      color: #5a2b6e;
+      font-weight: bold;
     }
 
     nav {
-      background-color: #3d2c8d;
+      background-color: #f4d9fa;
       text-align: center;
-      padding: 0.8rem 0;
+      padding: 1rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
 
     nav a {
-      margin: 0 15px;
+      margin: 0 18px;
       text-decoration: none;
-      color: #ffd700;
+      color: #7a3b8f;
       font-weight: bold;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+    }
+
+    .hero-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 3rem 5%;
+      background: #fff7fc;
+    }
+
+    .hero-gallery img {
+      width: 320px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .artist-profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fce1f0;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .artist-profile img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    }
+
+    .artist-profile h2 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      color: #5e2a60;
+      font-weight: bold;
     }
 
     .section {
-      padding: 2rem 10%;
-      background: rgba(26, 26, 64, 0.9);
-      border-radius: 12px;
+      padding: 3rem 10%;
+      background: #ffffff;
+      border-radius: 14px;
       margin: 2rem auto;
-      box-shadow: 0 6px 12px rgba(255, 215, 0, 0.2);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
     }
 
     .section h2 {
-      color: #ffd700;
-      font-size: 2rem;
+      color: #7c3d8f;
+      font-size: 2.2rem;
       margin-bottom: 1rem;
-      border-bottom: 2px solid #ffd700;
+      border-bottom: 3px solid #f7b2d9;
       display: inline-block;
+      font-weight: bold;
     }
 
     .section p, .section li {
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      margin-top: 2rem;
-    }
-
-    .art-card {
-      background: #241b4a;
-      border-radius: 10px;
-      padding: 1rem;
-      box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
-      text-align: center;
-      color: #fffbe7;
-    }
-
-    .art-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    footer {
-      background: #2e265f;
-      color: #ffd700;
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
+      font-size: 1.2rem;
+      line-height: 1.9;
+      color: #4a235a;
+      font-weight: bold;
     }
 
     ul {
@@ -100,7 +125,46 @@
     }
 
     li {
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 2rem;
+    }
+
+    .art-card {
+      background: #fbe6f2;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      color: #3d2c8d;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .art-card:hover {
+      transform: scale(1.02);
+    }
+
+    .art-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #ecd8f9;
+      color: #6e3270;
+      text-align: center;
+      padding: 2rem;
+      font-weight: bold;
+      margin-top: 2rem;
+      font-size: 1rem;
     }
   </style>
 </head>
@@ -110,6 +174,50 @@
     <h1>HERITAGE HUE'S ART GALLERY</h1>
     <p>Where Colors Meet Soul</p>
   </header>
+  
+<a href="https://www.instagram.com/_mystic_hue_?igsh=MTU1bmthZGJ0cTVtdw==" target="_blank" style="
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #ff5e9c, #ff9966);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(255, 94, 156, 0.6), 0 0 30px rgba(255, 153, 102, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: glowPulse 2s infinite;
+">
+  🎨 Click here to Visit the Instagram Page
+</a>
+
+<style>
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 15px rgba(255, 94, 156, 0.6), 0 0 30px rgba(255, 153, 102, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 94, 156, 0.8), 0 0 40px rgba(255, 153, 102, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(255, 94, 156, 0.6), 0 0 30px rgba(255, 153, 102, 0.5);
+  }
+}
+</style>
+  <section class="hero-gallery">
+    <img src="https://i.pinimg.com/736x/dc/03/21/dc03213e0c6135c77ee702d1c17c51d2.jpg" alt="Painting 1">
+    <img src="https://i.pinimg.com/736x/ce/52/cc/ce52ccf472d4c83487063691d4ef7d0d.jpg" alt="Painting 2">
+    <img src="https://i.pinimg.com/736x/ff/57/50/ff57505e8e38c111de0d34b8bb0a2c1a.jpg" alt="Painting 3">
+    <img src="https://i.pinimg.com/736x/50/e7/c0/50e7c0edaa7930af8aeda36a01aab02c.jpg" alt="Painting 4">
+    <img src="https://i.pinimg.com/736x/61/e9/92/61e992760b579a57689fa821155aece1.jpg" alt="Painting 5">
+    <img src="https://i.pinimg.com/736x/3e/53/a6/3e53a6bcf262fb848f3eed451492b413.jpg" alt="Painting 6">
+  </section>
+
+  <section class="artist-profile">
+    <img src="https://i.pinimg.com/736x/eb/24/dc/eb24dcf8e4dab71a2edcdddfe129f21c.jpg" alt="Artist">
+    <h2>Harish G – Landscape Artist</h2>
+  </section>
 
   <nav>
     <a href="#about">About</a>
@@ -123,7 +231,7 @@
   <section class="section" id="about">
     <h2>About Us</h2>
     <p>
-      Welcome to <strong>WELCOME TO HERITAGE HUE'S ART GALLERY</strong>, a sanctuary of vibrant expressions and creative imagination.
+      Welcome to <strong>HERITAGE HUE'S ART GALLERY</strong>, a sanctuary of vibrant expressions and creative imagination.
       We celebrate the beauty of visual storytelling through a wide spectrum of artistic styles and painting techniques.
       Whether you’re a lover of serene landscapes or thought-provoking abstracts, you’ll find something that speaks to your heart.
     </p>
@@ -133,12 +241,9 @@
     <h2>What is Art?</h2>
     <p>
       Art is a timeless form of human expression, a mirror to the soul, and a voice that speaks across cultures and centuries.
-      It encompasses a wide variety of forms — from paintings and sculptures to digital media and installations. 
-      At its core, art reflects emotions, thoughts, philosophies, and observations of the human experience.
     </p>
     <p>
       Through art, artists share personal perspectives, document history, provoke thought, and awaken the senses.
-      It transcends language and geography — reminding us of our shared humanity.
     </p>
   </section>
 
@@ -154,13 +259,12 @@
 
   <section class="section" id="materials">
     <h2>Mediums</h2>
-    <p>All artworks at HERITAGE HUE'S are crafted using:</p>
+    <p><strong>HERITAGE HUE'S</strong> artists work in:</p>
     <ul>
       <li><strong>Watercolor:</strong> Light and emotional, perfect for dreamlike themes.</li>
       <li><strong>Acrylic:</strong> Versatile and bold, used for both texture and brightness.</li>
       <li><strong>Oil:</strong> Rich, layered, and enduring — the classical choice for realism and depth.</li>
     </ul>
-    <p>Each canvas is chosen to best suit the expression — ranging from intimate to expansive formats.</p>
   </section>
 
   <section class="section" id="artist">
@@ -209,24 +313,36 @@
       <li>California & across India</li>
     </ul>
   </section>
-
   <section class="section" id="gallery">
     <h2>Gallery Preview</h2>
-    <p>Each painting is a vibrant journey — a story expressed in layers, light, and color.</p>
     <div class="gallery">
       <div class="art-card">
-        <img src="https://source.unsplash.com/featured/?abstract-art" alt="Abstract Art">
-        <p><strong>“Mystic Forms”</strong> – Mixed Media: Acrylic, Oil & Watercolor</p>
+        <img src="https://i.pinimg.com/736x/91/74/4a/91744adcfcc0637e8b9f0d00be65614d.jpg" alt="Abstract Art">
+        <p><strong>“Mystic Forms”</strong><br>Mixed Media: Acrylic, Oil & Watercolor</p>
       </div>
       <div class="art-card">
-        <img src="https://source.unsplash.com/featured/?landscape-painting" alt="Landscape Art">
-        <p><strong>“Dawn’s Embrace”</strong> – Landscape on Mixed Media Canvas</p>
+        <img src="https://i.pinimg.com/736x/04/2c/be/042cbeee0ba81ce3f8c52a2b2aeb2f63.jpg" alt="Landscape Art">
+        <p><strong>“Dawn’s Embrace”</strong><br>Landscape on Mixed Media Canvas</p>
       </div>
     </div>
   </section>
+   <a href="https://www.instagram.com/_mystic_hue_?igsh=MTU1bmthZGJ0cTVtdw==" target="_blank" style="
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #ff6a00, #ffb347);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(255, 106, 0, 0.4);
+  transition: all 0.3s ease;
+">
+   Click Here To Visit The Instagram Page 🎨
+</a>
 
   <footer>
-    <p>© 2025 KALA KUTIRA ART GALLERY | All rights reserved | Crafted with love for art</p>
+    <p>© 2025 HERITAGE HUE'S ART GALLERY | All rights reserved | Designed with ❤️ by the artist</p>
   </footer>
 
 </body>
