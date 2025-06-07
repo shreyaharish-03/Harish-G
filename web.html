@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KALA KUTIRA ART GALLERY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #1a1a40, #3d2c8d);
+      color: #f9f6f2;
+    }
+
+    header {
+      background-color: #2e265f;
+      color: #ffd700;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background-color: #3d2c8d;
+      text-align: center;
+      padding: 0.8rem 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ffd700;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .section {
+      padding: 2rem 10%;
+      background: rgba(26, 26, 64, 0.9);
+      border-radius: 12px;
+      margin: 2rem auto;
+      box-shadow: 0 6px 12px rgba(255, 215, 0, 0.2);
+    }
+
+    .section h2 {
+      color: #ffd700;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ffd700;
+      display: inline-block;
+    }
+
+    .section p, .section li {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    .art-card {
+      background: #241b4a;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+      text-align: center;
+      color: #fffbe7;
+    }
+
+    .art-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #2e265f;
+      color: #ffd700;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KALA KUTIRA ART GALLERY</h1>
+    <p>Where Colors Meet Soul</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#whatisart">What is Art?</a>
+    <a href="#styles">Art Styles</a>
+    <a href="#materials">Mediums</a>
+    <a href="#artist">The Artist</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to <strong>KALA KUTIRA ART GALLERY</strong>, a sanctuary of vibrant expressions and creative imagination.
+      We celebrate the beauty of visual storytelling through a wide spectrum of artistic styles and painting techniques.
+      Whether you’re a lover of serene landscapes or thought-provoking abstracts, you’ll find something that speaks to your heart.
+    </p>
+  </section>
+
+  <section class="section" id="whatisart">
+    <h2>What is Art?</h2>
+    <p>
+      Art is a timeless form of human expression, a mirror to the soul, and a voice that speaks across cultures and centuries.
+      It encompasses a wide variety of forms — from paintings and sculptures to digital media and installations. 
+      At its core, art reflects emotions, thoughts, philosophies, and observations of the human experience.
+    </p>
+    <p>
+      Through art, artists share personal perspectives, document history, provoke thought, and awaken the senses.
+      It transcends language and geography — reminding us of our shared humanity.
+    </p>
+  </section>
+
+  <section class="section" id="styles">
+    <h2>Art Styles</h2>
+    <ul>
+      <li><strong>Abstract:</strong> Shapes, color, and motion converge in works that bypass the physical world and speak directly to emotion.</li>
+      <li><strong>Landscape:</strong> A visual homage to nature — tranquil, immersive, and endlessly inspiring.</li>
+      <li><strong>Modern & Minimalist:</strong> Clean, bold, and conceptual — a celebration of space, simplicity, and modern life.</li>
+      <li><strong>Traditional & Folk:</strong> Rooted in rich heritage and storytelling, these works reflect deep cultural echoes.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="materials">
+    <h2>Mediums</h2>
+    <p>All artworks at KALA KUTIRA are crafted using:</p>
+    <ul>
+      <li><strong>Watercolor:</strong> Light and emotional, perfect for dreamlike themes.</li>
+      <li><strong>Acrylic:</strong> Versatile and bold, used for both texture and brightness.</li>
+      <li><strong>Oil:</strong> Rich, layered, and enduring — the classical choice for realism and depth.</li>
+    </ul>
+    <p>Each canvas is chosen to best suit the expression — ranging from intimate to expansive formats.</p>
+  </section>
+
+  <section class="section" id="artist">
+    <h2>The Artist – Harish G</h2>
+    <p><strong>My Journey as a Landscape Painter</strong></p>
+    <ul>
+      <li><strong>Experience:</strong> 1998–2002 – Maharshi Institutions, Mysore</li>
+    </ul>
+    <p><strong>Awards:</strong></p>
+    <ul>
+      <li>1997 – Gold Medal, Mysore Raju Kshatriya Yuva Vedike</li>
+      <li>1995–1998 – Dasara Exhibition, Mysore</li>
+      <li>1993–1996 – Best Painting, Sri Kalaniketana School of Art</li>
+      <li>1994 – Best Student, Sri Kalaniketana School of Art</li>
+      <li>1995 – All India Kannada Sahithya Sammelana, Mysore</li>
+      <li>1996 – State Level Art Exhibition, Mandya</li>
+    </ul>
+    <p><strong>Broadcasts:</strong></p>
+    <ul>
+      <li>1996 – Kalavidarodane Bheti, All India Radio, Mysore</li>
+      <li>2014 – Bhimbha Programme, All India Radio, Mysore</li>
+    </ul>
+    <p><strong>Scholarships:</strong> 1994–1997 – Karnataka Lalithakala Academy</p>
+    <p><strong>One-Man Shows:</strong></p>
+    <ul>
+      <li>1996 – Palace Grounds, Mysore</li>
+      <li>1999 – Wellington Art Gallery, Mysore</li>
+      <li>2013 – Sri Kalaniketana School of Art</li>
+      <li>2014 – SPI Software Paradigms Infotech, Mysore</li>
+    </ul>
+    <p><strong>Art Camps:</strong> Hampi, Chitradurga, Bijapur, Aihole, Pattadakallu, Badami, Melukote, South India</p>
+    <p><strong>Group Shows:</strong></p>
+    <ul>
+      <li>1994–1997 – Mysore</li>
+      <li>1995 – 3buds Exhibition of Landscapes</li>
+      <li>1995–1996 – Roadside Exhibitions</li>
+      <li>1996 – Samuha Chitrakala Pradarshana, CAVA Art Gallery</li>
+    </ul>
+    <p><strong>Collections Displayed At:</strong></p>
+    <ul>
+      <li>ZF Steering Gear (India), Pune</li>
+      <li>SPI, Mysore</li>
+      <li>Radisson Blu Plaza, Mysore</li>
+      <li>JSS Multispecialty Hospital, Mysore</li>
+      <li>Hotels: Aishwarya, Roost, Country Inn, Darshan Palace, Kings Castle, Dawn, Oasis, etc.</li>
+      <li>California & across India</li>
+    </ul>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Gallery Preview</h2>
+    <p>Each painting is a vibrant journey — a story expressed in layers, light, and color.</p>
+    <div class="gallery">
+      <div class="art-card">
+        <img src="https://source.unsplash.com/featured/?abstract-art" alt="Abstract Art">
+        <p><strong>“Mystic Forms”</strong> – Mixed Media: Acrylic, Oil & Watercolor</p>
+      </div>
+      <div class="art-card">
+        <img src="https://source.unsplash.com/featured/?landscape-painting" alt="Landscape Art">
+        <p><strong>“Dawn’s Embrace”</strong> – Landscape on Mixed Media Canvas</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 KALA KUTIRA ART GALLERY | All rights reserved | Crafted with love for art</p>
+  </footer>
+
+</body>
+</html>
